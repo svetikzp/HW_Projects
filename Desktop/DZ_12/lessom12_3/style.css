@@ -1,0 +1,6 @@
+li {
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  list-style-type: '✓';
+  padding-left: 15px;
+}
