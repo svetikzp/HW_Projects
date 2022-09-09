@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+body, h1, h2, p, a, img {
+  margin: 0;
+  padding: 0;  
+  font-family: Montserrat;
+}
+
+h1 {
+  color: #2f4f4f;
+}
+
+main {
+  display: grid;
+  height: 100vh;  
+  grid-template: 100% / 20% 80%;
+}
+
+section {
+background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+}
+
+section:first-of-type {
+  background: radial-gradient(40% 50%, #ee82ee #00ffff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color:#696969;
+}
+
+a:hover {
+  color: #d8bfd8;
+}
+
+h1 {
+  letter-spacing: 3px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+h2 {
+  font-size: 60px;
+}
+  
+nav {
+  margin-bottom: 50px;
+}
+
+nav a, .copywrite {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.copywrite {
+  margin-bottom: 0;  
+}
+
+section:last-of-type {
+background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #352A3B);
+  display: grid;
+  align-content: center;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.avatar {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  grid-row: 1 / span 3;
+}
+
+.visit-card {
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 75px;
+}
+
+.visit-card h2, .visit-card p {
+  margin-bottom: 30px;
+}
+
+.visit-card p {
+  font-style: italic;
+}
+
+.social-media svg {
+  /*fill: white;*/
+  fill: 	#c0c0c0;
+  width: 20px;
+  margin-right: 10px;
+}

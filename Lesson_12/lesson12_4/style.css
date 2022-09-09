@@ -1,0 +1,24 @@
+.product-grid {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+}
+
+.product-grid > div {
+  width: 300px;
+  height: 300px;
+   margin-bottom: 20px;
+  margin-top: 30px;
+  color: MediumBlue;
+}
+
+.product-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-color: #ccc;
+  border-top-style: double; 
+  border-top-width: 7px; 
+  border-left-color: #ccc; 
+  border-left-style: solid; 
+  border-left-width: 2px; 
+}
