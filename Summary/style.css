@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media  screen and (max-width: 525px) {
+  .header-pc {
+    display: none
+  }
+  .header-mobile {
+    display: block
+  }
+}
+
+main {
+  display: grid;
+  grid-auto-columns: auto;
+  justify-content: start;
+  gap: 20px;
+  padding: 30px;
+}
+
+body {
+  background-image: radial-gradient(silver, aquamarine, lightpink);
+
+}
+
+body, p, h, button, input {
+  font-family: Poppins;
+}
+
+a:active, a:link, a:visited {
+  text-decoration: none;
+  color: rgb(16, 95, 222);
+}
+
+a:hover {
+  color: rgb(75, 85, 94);
+  text-decoration: underline;
+}
+
+.two-columns {
+  display: grid;
+  grid-template: auto/minmax(0, 50%) minmax(0, 50%);
+  gap: 20px
+}
+
+.round {
+  border-radius: 50%;
+}
+
+box-shadow: 0 4px 8px rgb(134 151 168 / 10%);
+}
+/* Badge */
+.badge, .card .badge {
+  background: rgb(240, 240, 240);
+  padding: 4px 5px;
+  border-radius: 4px;
+  display: inline-block;
+  line-height: 13px;UI/UX 
+  color: rgb(51,51,51);
+  margin: 0 0 20px 0;
+}
+
+#inner {
+  padding: 10px 80px;    
+  margin: 80px auto; 
+ background: #f5f5f5; 
+ border: solid #666; 
+  border-width: 8px 0 2px 0; 
+  border-radius: 25px;
+}
+
+.avatar{
+    float: right;
+   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+   
+.avatar img {
+    float: right;
+     width: 100px;
+  height: 100px;
+  border: 5px solid linen;
+  object-fit: cover;
+  wbox-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+/* Параметры рамки */
+.round {
+  border-radius: 100px;
+  box-shadow: 0 0 7px #dc4f4f;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: rgb(51,51,51);
+}
+
+h2 {
+  color: rgb(51,51,51);
+  text-align:center;
+  letter-spacing: 1px;
+  font-size: 21px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  margin: 0 0 40px;
+  /*display: inline-block;*/
+}
+
+h2:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background: #FFB6C1;
+  height: 10px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 9px;
+  z-index: -1;
+}
+
+h3 {
+   font-size: 18px;
+  font-weight: 400;
+  color: rgb(51,51,51);
+  margin-bottom: 20px;
+}
+
+h4 {
+  text-align:  center;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgb(51,51,51);
+  margin-bottom: 20px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  margin: 0 0 40px;
+}
+
+h4:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background: linear-gradient(#fdbfca 35%, #f9b8cb 35%, #cdfef0 40%, #39f9c2 35%);
+  height:6px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 6px;
+  z-index: -1;
+}
+
+h5 {
+  line-height: 21px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+p {
+  /*line-height: 1;*/
+   margin: 0 !important;
+}
+.card {
+  /*background: #fff;*/
+  background-image: radial-gradient(#FCF7F7, #D9F7F2);
+
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.card p {
+  font-weight: 400;
+  color: rgb((2, 23, 43);
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.card b {
+  color: rgb(51, 51, 51);
+  font-weight: 600;
+}
+
+.card.about {
+  display: grid;
+  grid-template: auto / 50% 50%;
+  gap: 30px;
+  max-width: 600px;
+}
+
+.card svg {
+  fill: rgb(51, 51, 51);
+  width: 30px;
+  margin: 0 0 24px 0;
+}
+.card svg:first-child {
+  margin-top: 0;
+}
+
+.card h5 + svg {
+  margin-top: 20px;
+}
+
+.card-content {
+  padding: 30px 0 0;
+}
+
+.card-content a {
+  width: 100%;
+  padding-top: 30px;
+  text-align: center;
+  display: block;
+}
+/* romb */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px 0 10px 20px;
+}
+
+li {
+  position: relative;
+}
+
+li::before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  margin-right: 10px;
+  transform: translate(0, -50%) scaleY(1.5) rotate(45deg);
+}
+.post-text {
+    display: inline-block;
+    width: 600px;
+    height: auto;
+    margin-top: -30px;
+    margin-left: 120px;
+    margin-bottom: -60px;
+    padding: 5px;
+    font: bond 12px Poppins;
+    border: 1px solid #0960bb;
+    word-wrap: break-word;
+ }
