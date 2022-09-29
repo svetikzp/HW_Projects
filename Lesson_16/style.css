@@ -1,0 +1,66 @@
+body {
+    font-family: Poppins;
+  
+}
+label {
+    font-size: 20px;
+  color: #1826b5;      
+}
+
+fieldset {
+  font-weight: 350px;
+  background: #fefcfd;
+ border: solid #11efba; 
+ border-width: 8px 0 2px 0; 
+ border-radius: 15px;
+  width: 50%;
+}
+button {
+    border-radius: 5px;
+    text-align: center;
+    min-width: 150px;
+    min-height: 40px;
+    font-size: 18px;
+    color: #62145a;
+    justify-self: center;
+}
+h3{
+    font-size: 25px;
+   text-align: center;
+  color: #62145a;
+}
+select,
+input {
+    font-size: 16px;
+    border-radius: 5px;
+ border: inset #e2d3f3;
+  color: #165d5b;
+  
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    justify-items: center;
+       
+}
+
+.label {
+    margin: 10px;
+}
+
+.select,
+.input {
+    margin: 10px;
+}
+
+.button {
+position: relative;
+left: 50%;
+transform: translate(-50%, 0); 
+color: #cff3ee; 
+}
+option{
+  color: indigo;
+}
