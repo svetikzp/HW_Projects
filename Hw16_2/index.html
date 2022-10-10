@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Hw_16_2</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+    <meta charset="utf-8" />
+    <title>My Dz_16</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+ <script src="./Hw_16_2.js"></script>
+<body>
+  <h3>Cat Breeds</h3>
+ 
+  <form method = "POST" action = "https://httpbin.org/post">
+    <center>
+    <fieldset>
+      
+       <div class="wrap">
+               <div class="label">
+         <label for = "breed_preference">Favorite cat breed</label>
+                </div>
+         
+      <div class="select">
+       <select name = "catBreeds" id = "breed_preference" required>
+         <option value = ""><h4>Choose one</h4></option>
+                    </select>
+              </div>
+         
+       <div class = "label">
+         <label for="catNumb">How many cats have you had?</label>
+        </div>
+        <div class = "input">
+           <input id = "catNumb" type = "number" name = "catNumb" min = "0" max = "20" value = '0' size="3">
+         </div>
+         
+         <div class = "label">
+         <label for = "catNume">Favorite cat name</label>
+                </div>   
+         <div class = "input">
+                    <input id = "catName" type = "text" name = "catName" id="Nameid" required pattern = "[A-Z]{1,}[a-z]{2,}" title = "The cat's name must begin with a capital letter.">
+               </div>
+      
+                 <button type="reset">Reset</button>
+          
+                    <button type = "submit" value = "submit">Submit</button>
+                
+          </div>
+        </fieldset>
+</center>
+         </div>
+   </form>  
+</body>
+ 
+    <script src="Hw16_2.js"></script>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

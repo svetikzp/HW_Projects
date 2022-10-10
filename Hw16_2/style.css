@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html, body {
+ /* display: grid;
+  height: 100%;
+  place-items: center;*/
+  background: #000;
+  overflow: hidden;
+}
+label {
+    font-size: 20px;
+  color: #1826b5;  
+}
+
+.label {
+    margin: 10px;
+}
+
+fieldset {
+  font-weight: 350px;
+  background: #fefcfd;
+ border: solid #11efba; 
+ border-width: 8px 0 2px 0; 
+ border-radius: 15px;
+  width: 50%;
+}
+
+h3{
+    font-size: 25px;
+   text-align: center;
+  color: #62145a;
+}
+h4 {
+  text-align: center;
+  color: #FF4500;
+}
+
+select,
+input {
+    font-size: 16px;
+    border-radius: 5px;
+ border: inset #BA55D3;
+  color: #008080;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    justify-items: center;    
+}
+
+.select,
+.input {
+    margin: 10px;
+}
+
+option {
+  color: indigo;
+}
+
+button{
+  position: relative;
+    text-align: center;
+    min-width: 150px;
+    min-height: 40px;
+  margin: 0 25px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: #111;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+button:first-child:hover{
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+button:last-child:hover{
+  background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+  background-size: 400%;
+}
+button:first-child:before,
+button:last-child:before{
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 20px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+button:first-child:hover:before,
+button:last-child:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+button:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
