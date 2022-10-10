@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Dz_16</title>
+  <title>CodePen - Hw_16_1</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -11,47 +11,55 @@
 <head>
     <meta charset="utf-8" />
     <title>My Dz_16</title>
-    <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="./style.css">
 </head>
 
  <script src="./Dz_16.js"></script>
 <body>
-  <h3>Cat breeds</h3>
-  <form method = 'POST' action = "https://httpbin.org/post">
+  <h3>Cat Breeds</h3>
+ 
+  <form method = "POST" action = "https://httpbin.org/post">
     <center>
     <fieldset>
       
        <div class="wrap">
-                <div class="label">
-                    <label for = "breed_preference">Favorite cat breed</label>
+               <div class="label">
+         <label for = "breed_preference"><b>Favorite cat breed</b></label>
                 </div>
+         
       <div class="select">
-       <select name = "breedCat" id = "breed_preference" required>
+       <select name = "catBreeds" id = "breed_preference" required>
          <option value = "">Choose one</option>
                     </select>
-                </div>
+              </div>
+         
        <div class = "label">
-         <label for = "numberCats">How many cats have you had?</label>
-         </div>
+         <label for="catNumb"><b>How many cats have you had?</b></label>
+        </div>
         <div class = "input">
-           <input id = "numberCats" type = "number" name = "numberCats" min = '0' value = '0' size="3">
+           <input id = "catNumb" type = "number" name = "catNumb" min = "0" max = "20" value = '0' size="3">
          </div>
          
          <div class = "label">
-                    <label for = "catName">Favorite cat name</label>
+         <label for = "catNume"><b>Favorite cat name</b></label>
                 </div>   
          <div class = "input">
-                    <input id = "catName" type = "text" name = "catName" required pattern = "^[A-Z]\D+">
-                </div>
-         <div class = "button">
-                    <button type = "reset">Submit</button>
-                </div>
+                    <input id = "catName" type = "text" name = "catName" id="Nameid" required pattern = "[A-Z]{1,}[a-z]{2,}" title = "The cat's name must begin with a capital letter.">
+               </div>
+      
+                    <button type="reset">Reset</button>
+          
+                    <button type = "submit" value = "submit">Submit</button>
+                
           </div>
         </fieldset>
 </center>
          </div>
-     
+   </form>  
 </body>
+ 
+    <script src="./Les16.js"></script>
+</html>
 <!-- partial -->
   <script  src="./script.js"></script>
 
