@@ -1,7 +1,12 @@
 body {
-    font-family: Poppins;
-  
+  font-family: 'Poppins', sans-serif;
 }
+
+html, body {
+  overflow: hidden;
+  background: #E6E6FA;
+}
+
 label {
     font-size: 20px;
   color: #1826b5;      
@@ -18,12 +23,20 @@ fieldset {
 button {
     border-radius: 5px;
     text-align: center;
-    min-width: 150px;
+    min-width: 100px;
     min-height: 40px;
     font-size: 18px;
     color: #62145a;
-    justify-self: center;
 }
+
+.button {
+ justify-self: center; 
+position: relative;
+left: 30%;
+transform: translate(-50%, 0); 
+/*color: #e0ffff;*/
+}
+
 h3{
     font-size: 25px;
    text-align: center;
@@ -33,9 +46,8 @@ select,
 input {
     font-size: 16px;
     border-radius: 5px;
- border: inset #e2d3f3;
+ border: inset #00FFFF;
   color: #165d5b;
-  
 }
 
 .wrap {
@@ -55,12 +67,6 @@ input {
     margin: 10px;
 }
 
-.button {
-position: relative;
-left: 50%;
-transform: translate(-50%, 0); 
-color: #cff3ee; 
-}
-option{
+option {
   color: indigo;
 }
